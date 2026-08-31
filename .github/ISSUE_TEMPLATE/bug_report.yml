@@ -1,0 +1,33 @@
+name: Bug report
+description: Report a display, layout, or content problem in the analysis page
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting an issue with the "Every Harness Will Become A Claw" analysis page.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the bug (broken layout, overlapping text, SVG not rendering, etc.) and what you expected instead.
+    validations:
+      required: true
+  - type: input
+    id: viewport
+    attributes:
+      label: Viewport / device
+      placeholder: Desktop 1440x900 / iPhone 15 Safari
+    validations:
+      required: false
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open index.html
+        2. Scroll to section ...
+        3. See issue
+    validations:
+      required: false
